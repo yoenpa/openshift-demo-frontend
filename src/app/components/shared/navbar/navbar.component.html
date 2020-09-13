@@ -1,0 +1,25 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded">
+  <a class="navbar-brand" href="#">Administración</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['usuarios']">Login</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['usuario', 'nuevo']">Registrarse</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['listausuarios']">Lista usuarios</a>
+      </li>
+    </ul>
+    <span class="oi oi-icon-name" title="icon name" aria-hidden="true"></span>
+    <span class="navbar-text puntero glyphicon glyphicon-user">
+      Usuario
+    </span>
+  </div>
+</nav>
+

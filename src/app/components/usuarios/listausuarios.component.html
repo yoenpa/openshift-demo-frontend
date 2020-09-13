@@ -1,0 +1,17 @@
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="saludo">C.I</th>
+                <th class="saludo">Nombre de Usuario</th>
+                <th class="saludo">Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios| keys; let i = index">
+                <td class="saludo" scope="row">{{ usuarios[usuario].run}}</td>
+                <td class="saludo" scope="row">{{ usuarios[usuario].userName }}</td>
+                <td class="saludo" scope="row">{{ usuarios[usuario].nombre }} {{ usuarios[usuario].apePaterno }} {{ usuarios[usuario].apeMaterno
+                    }}</td>
+            </tr>
+        </tbody>
+    </table>

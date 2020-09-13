@@ -1,0 +1,27 @@
+<div class="form">
+   <div style="text-align: center;">
+     <img src="../assets/img/logo-sonda.png">
+   </div>
+    <div class="saludo">Bienvenidos</div><br>
+  <form>
+       <div class="top-row">
+          <div class="field-wrap">
+            <input  required autocomplete="off" [(ngModel)]="usuario.userName"
+                    name="userName"
+                    type="text"
+                    id="userName" placeholder="Nombre de usuario"/>
+          </div>
+        <div class="field-wrap">
+            <input [(ngModel)]="usuario.contrasenia" name="contrasenia" type="password" id="contrasenia" placeholder="Contraseña"/>
+        </div>
+      </div>
+      <div class="saludo">
+        {{mensaje}}
+      </div>
+  </form>
+  <button name="login" (click)="login()" type="button" class="button button-block">Ingresar</button><br><br>
+  <div class="field-wrap">
+    <div class="saludo">¿No tienes cuenta? ¡Regístrate!</div>
+    <button name="registrarse" [routerLink]="['/usuario','nuevo']" type="button" class="button button-block">Registrarse</button>
+  </div>
+</div>
