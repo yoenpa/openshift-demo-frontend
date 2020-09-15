@@ -6,13 +6,12 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install -g @angular/cli@1.3.2
-      - npm install --save-dev @angular/compiler
+      - npm install -g @angular/compiler-cli@^4.4.7
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the dist folder
       - npm run-script build
-      - 
   post_build:
     commands:
       - echo Build completed on `date`
